@@ -55,7 +55,9 @@ const Main = () => {
   const searchMovie = (evt) => {
     if (evt.key === "Enter") 
     {
-      console.log("hello");
+     url=base_url+"https://api.themoviedb.org/3/search/movie?api_key=02d26361cf8b8a15bd9ef8854162845f&query=Jack+Reacher"+search;
+     setUrl(url);
+     setSearch("");
     }
   };
   return (
